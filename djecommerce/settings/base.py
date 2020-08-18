@@ -5,6 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))))
 
 SECRET_KEY = config('SECRET_KEY', default=1234)
+STRIPE_TEST_PUBLIC_KEY= config('STRIPE_TEST_PUBLIC_KEY', default=1234)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
