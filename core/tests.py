@@ -139,6 +139,7 @@ class ItemModelMockFile(TestCase):
         self.assertEqual(w.__unicode__(), fields)
 
 
+
 """"
 
 def get_coupon(request, code):
