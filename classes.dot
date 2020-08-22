@@ -1,0 +1,40 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{AddCouponView|\l|post()\l}", shape="record"];
+"1" [label="{AddCouponViewMock|\l|AddCouponMock(mock_get_coupon)\l}", shape="record"];
+"2" [label="{Address|address_type : CharField\lapartment_address : CharField\lcountry : CountryField\ldefault : BooleanField\ldefault : bool\lstreet_address : CharField\luser : ForeignKey\lzip : CharField\l|}", shape="record"];
+"3" [label="{AddressAdmin|list_display : list\llist_filter : list\lsearch_fields : list\l|}", shape="record"];
+"4" [label="{CheckoutForm|billing_address : CharField\lbilling_address2 : CharField\lbilling_country\lbilling_zip : CharField\lpayment_option : ChoiceField\lsame_billing_address : BooleanField\lset_default_billing : BooleanField\lset_default_shipping : BooleanField\lshipping_address : CharField\lshipping_address2 : CharField\lshipping_country\lshipping_zip : CharField\luse_default_billing : BooleanField\luse_default_shipping : BooleanField\l|}", shape="record"];
+"5" [label="{CheckoutView|\l|get()\lpost()\l}", shape="record"];
+"6" [label="{CoreConfig|name : str\l|}", shape="record"];
+"7" [label="{Coupon|amount : FloatField\lcode : CharField\l|}", shape="record"];
+"8" [label="{CouponForm|code : CharField\l|}", shape="record"];
+"9" [label="{HomeView|model\lpaginate_by : int\ltemplate_name : str\l|}", shape="record"];
+"10" [label="{Item|category : CharField\ldescription : TextField\ldiscount_price : FloatField\limage : ImageField\llabel : CharField\lprice : FloatField\lslug : SlugField\ltitle : CharField\l|get_absolute_url()\lget_add_to_cart_url()\lget_remove_from_cart_url()\l}", shape="record"];
+"11" [label="{ItemDetailView|model\ltemplate_name : str\l|}", shape="record"];
+"12" [label="{ItemModelMockFile|\l|create_item_image(image, title, price, discount_price, category, label, slug, description)\ltest_item_creation()\l}", shape="record"];
+"13" [label="{ItemModelTest|\l|create_item(title, price, discount_price, category, label, slug, description, image)\ltest_item_creation()\l}", shape="record"];
+"14" [label="{Meta|verbose_name_plural : str\l|}", shape="record"];
+"15" [label="{Migration|dependencies : list\linitial : bool\loperations : list\l|}", shape="record"];
+"16" [label="{Migration|dependencies : list\loperations : list\l|}", shape="record"];
+"17" [label="{Migration|dependencies : list\loperations : list\l|}", shape="record"];
+"18" [label="{Migration|dependencies : list\loperations : list\l|}", shape="record"];
+"19" [label="{Order|being_delivered : BooleanField\lbilling_address : ForeignKey\lcoupon : ForeignKey\litems : ManyToManyField\lordered : BooleanField\lordered_date : DateTimeField\lpayment : ForeignKey\lreceived : BooleanField\lref_code : CharField\lrefund_granted : BooleanField\lrefund_requested : BooleanField\lshipping_address : ForeignKey\lstart_date : DateTimeField\luser : ForeignKey\l|get_total()\l}", shape="record"];
+"20" [label="{OrderAdmin|actions : list\llist_display : list\llist_display_links : list\llist_filter : list\lsearch_fields : list\l|}", shape="record"];
+"21" [label="{OrderItem|item : ForeignKey\lordered : BooleanField\lquantity : IntegerField\luser : ForeignKey\l|get_amount_saved()\lget_final_price()\lget_total_discount_item_price()\lget_total_item_price()\l}", shape="record"];
+"22" [label="{OrderSummaryView|\l|get()\l}", shape="record"];
+"23" [label="{Payment|amount\lamount : FloatField\lstripe_charge_id\lstripe_charge_id : CharField\ltimestamp : DateTimeField\luser\luser : ForeignKey\l|}", shape="record"];
+"24" [label="{PaymentForm|save : BooleanField\lstripeToken : CharField\luse_default : BooleanField\l|}", shape="record"];
+"25" [label="{PaymentFormTest|\l|test_valid_form()\l}", shape="record"];
+"26" [label="{PaymentView|\l|get()\lpost()\l}", shape="record"];
+"27" [label="{Refund|accepted : BooleanField\lemail\lemail : EmailField\lorder\lorder : ForeignKey\lreason\lreason : TextField\l|}", shape="record"];
+"28" [label="{RefundForm|email : EmailField\lmessage : CharField\lref_code : CharField\l|}", shape="record"];
+"29" [label="{RefundFormTest|\l|test_valid_form()\l}", shape="record"];
+"30" [label="{RefundFormTestParametrized|\l|test_form()\l}", shape="record"];
+"31" [label="{RequestRefundView|\l|get()\lpost()\l}", shape="record"];
+"32" [label="{UserProfile|one_click_purchasing : BooleanField\lstripe_customer_id : CharField\luser : OneToOneField\l|}", shape="record"];
+"33" [label="{ViewTest|\l|test_AddCoupon()\ltest_Checkout()\ltest_OrderSummary()\l}", shape="record"];
+"10" -> "9" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="model", style="solid"];
+"10" -> "11" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="model", style="solid"];
+}
