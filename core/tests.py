@@ -13,15 +13,15 @@ Models tests
 
 class ItemModelTest(TestCase):
     def create_item(
-        self,
-        title="K-way",
-        price=28.6,
-        discount_price=5.1,
-        category="SW",
-        label="M",
-        slug="",
-        description="Hi",
-        image="image.png",
+            self,
+            title="K-way",
+            price=28.6,
+            discount_price=5.1,
+            category="SW",
+            label="M",
+            slug="",
+            description="Hi",
+            image="image.png",
     ):
         return Item.objects.create(
             title=title,
@@ -147,15 +147,15 @@ class AddCouponViewMock(TestCase):
 # Test in cui l'immagine è mock
 class ItemModelMockFile(TestCase):
     def create_item_image(
-        self,
-        image,
-        title="K-way",
-        price=28.6,
-        discount_price=5.1,
-        category="SW",
-        label="M",
-        slug="",
-        description="Hi",
+            self,
+            image,
+            title="K-way",
+            price=28.6,
+            discount_price=5.1,
+            category="SW",
+            label="M",
+            slug="",
+            description="Hi",
     ):
         file_mock = mock.MagicMock(spec=File)
         file_mock.name = image

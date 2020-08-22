@@ -116,7 +116,7 @@ class CheckoutView(LoginRequiredMixin, View):
                     shipping_zip = form.cleaned_data.get("shipping_zip")
 
                     if is_valid_form(
-                        [shipping_address1, shipping_country, shipping_zip]
+                            [shipping_address1, shipping_country, shipping_zip]
                     ):
                         shipping_address = Address(
                             user=self.request.user,
@@ -186,8 +186,8 @@ class CheckoutView(LoginRequiredMixin, View):
                     billing_zip = form.cleaned_data.get("billing_zip")
 
                     if is_valid_form(
-                        [billing_address1, billing_country, billing_zip]
-                    ):
+                            [billing_address1, billing_country, billing_zip]
+                        ):
                         billing_address = Address(
                             user=self.request.user,
                             street_address=billing_address1,
@@ -268,12 +268,12 @@ class PaymentView(View):
 
             if save:
                 if (
-                    userprofile.stripe_customer_id is not None
-                    and userprofile.stripe_customer_id != ""
-                ):
+                        userprofile.stripe_customer_id is not None
+                        and userprofile.stripe_customer_id != ""
+                    ):
                     customer = stripe.Customer.retrieve(
                         userprofile.stripe_customer_id
-                    )
+                        )
                     customer.sources.create(source=token)
 
                 else:
