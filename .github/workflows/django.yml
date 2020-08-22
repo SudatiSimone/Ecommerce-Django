@@ -47,7 +47,7 @@ jobs:
       run: python -m mypy --config setup.cfg core
   
     - name: pylint
-      run: python -mpylint --rcfile=.pylintrc ./core
+      run: python -mpylint --rcfile=.pylintrc ./core --disable=W
       
 
 
