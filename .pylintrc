@@ -1,3 +1,5 @@
 [MASTER]
 
+[MESSAGES CONTROL]
+
 disable-msg=C0114,C0115
