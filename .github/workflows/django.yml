@@ -33,4 +33,4 @@ jobs:
       run: python -m black core --check
 
     - name: Bandit 
-      run: python -m bandit --config setup.cfg core -r
+      run: python -m bandit core -r
