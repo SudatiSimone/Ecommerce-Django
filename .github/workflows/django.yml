@@ -31,9 +31,7 @@ jobs:
     
     - name: Black code formatting
       run: |
-        python -m black core --exclude forms.py
-        python -m black core --check
-        
+        python -m black core --exclude forms.py        
         
     - name: Black line length
       run: |
@@ -43,5 +41,5 @@ jobs:
       run: python -m bandit core -r
      
     - name: Flake8
-      run: flake8 core --ignore F841,W503
+      run: flake8 core --ignore F841,W503,E231
 
