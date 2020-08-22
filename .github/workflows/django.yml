@@ -35,7 +35,7 @@ jobs:
         python -m black core --check
         
         
-    - name: Black code formatting
+    - name: Black line length
       run: |
         python -m black core --line-length 79 core
 
