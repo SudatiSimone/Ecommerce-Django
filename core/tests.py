@@ -67,7 +67,11 @@ class PaymentFormTest(TestCase):
 # corretto altrimenti restituisce errore nel test
 class RefundFormTest(TestCase):
     def test_valid_form(self):
-        data = {"ref_code": "234245", "message": "ciao", "email": "simone@mail.com"}
+        data = {
+            "ref_code": "234245",
+            "message": "ciao",
+            "email": "simone@mail.com",
+        }
         form = RefundForm(data=data)
         self.assertTrue(form.is_valid())
 

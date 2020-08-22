@@ -18,6 +18,7 @@ django-debug-toolbar==1.10.1
 django-mutpy==0.1.2
 django-selenium-login==2.0.0
 djangorestframework==3.8.2
+flake8==3.8.3
 future==0.18.2
 idna==2.8
 Jinja2==2.11.2

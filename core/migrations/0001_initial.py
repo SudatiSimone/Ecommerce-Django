@@ -28,12 +28,16 @@ class Migration(migrations.Migration):
                 ),
                 ("street_address", models.CharField(max_length=100)),
                 ("apartment_address", models.CharField(max_length=100)),
-                ("country", django_countries.fields.CountryField(max_length=2)),
+                (
+                    "country",
+                    django_countries.fields.CountryField(max_length=2),
+                ),
                 ("zip", models.CharField(max_length=100)),
                 (
                     "address_type",
                     models.CharField(
-                        choices=[("B", "Billing"), ("S", "Shipping")], max_length=1
+                        choices=[("B", "Billing"), ("S", "Shipping")],
+                        max_length=1,
                     ),
                 ),
                 ("default", models.BooleanField(default=False)),
@@ -91,7 +95,11 @@ class Migration(migrations.Migration):
                 (
                     "label",
                     models.CharField(
-                        choices=[("P", "primary"), ("S", "secondary"), ("D", "danger")],
+                        choices=[
+                            ("P", "primary"),
+                            ("S", "secondary"),
+                            ("D", "danger"),
+                        ],
                         max_length=1,
                     ),
                 ),
@@ -159,7 +167,8 @@ class Migration(migrations.Migration):
                 (
                     "order",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="core.Order"
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="core.Order",
                     ),
                 ),
             ],
@@ -207,7 +216,8 @@ class Migration(migrations.Migration):
                 (
                     "item",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="core.Item"
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="core.Item",
                     ),
                 ),
                 (
@@ -249,7 +259,8 @@ class Migration(migrations.Migration):
             model_name="order",
             name="user",
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL
+                on_delete=django.db.models.deletion.CASCADE,
+                to=settings.AUTH_USER_MODEL,
             ),
         ),
     ]

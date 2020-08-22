@@ -28,7 +28,9 @@ stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def create_ref_code():
-    return "".join(random.choices(string.ascii_lowercase + string.digits, k=20))
+    return "".join(
+        random.choices(string.ascii_lowercase + string.digits, k=20)
+    )
 
 
 def products(request):
@@ -60,13 +62,17 @@ class CheckoutView(LoginRequiredMixin, View):
                 user=self.request.user, address_type="S", default=True
             )
             if shipping_address_qs.exists():
-                context.update({"default_shipping_address": shipping_address_qs[0]})
+                context.update(
+                    {"default_shipping_address": shipping_address_qs[0]}
+                )
 
             billing_address_qs = Address.objects.filter(
                 user=self.request.user, address_type="B", default=True
             )
             if billing_address_qs.exists():
-                context.update({"default_billing_address": billing_address_qs[0]})
+                context.update(
+                    {"default_billing_address": billing_address_qs[0]}
+                )
             return render(self.request, "checkout.html", context)
         except ObjectDoesNotExist:
             messages.info(self.request, "You do not have an active order")
@@ -78,7 +84,9 @@ class CheckoutView(LoginRequiredMixin, View):
             order = Order.objects.get(user=self.request.user, ordered=False)
             if form.is_valid():
 
-                use_default_shipping = form.cleaned_data.get("use_default_shipping")
+                use_default_shipping = form.cleaned_data.get(
+                    "use_default_shipping"
+                )
                 if use_default_shipping:
                     print("Using the default shipping address")
                     address_qs = Address.objects.filter(
@@ -90,14 +98,21 @@ class CheckoutView(LoginRequiredMixin, View):
                         order.save()
                     else:
                         messages.info(
-                            self.request, "No default shipping" " address available"
+                            self.request,
+                            "No default shipping" " address available",
                         )
                         return redirect("core:checkout")
                 else:
                     print("User is entering a new shipping address")
-                    shipping_address1 = form.cleaned_data.get("shipping_address")
-                    shipping_address2 = form.cleaned_data.get("shipping_address2")
-                    shipping_country = form.cleaned_data.get("shipping_country")
+                    shipping_address1 = form.cleaned_data.get(
+                        "shipping_address"
+                    )
+                    shipping_address2 = form.cleaned_data.get(
+                        "shipping_address2"
+                    )
+                    shipping_country = form.cleaned_data.get(
+                        "shipping_country"
+                    )
                     shipping_zip = form.cleaned_data.get("shipping_zip")
 
                     if is_valid_form(
@@ -126,11 +141,16 @@ class CheckoutView(LoginRequiredMixin, View):
                     else:
                         messages.info(
                             self.request,
-                            "Please fill in the required " "shipping address fields",
+                            "Please fill in the required "
+                            "shipping address fields",
                         )
 
-                use_default_billing = form.cleaned_data.get("use_default_billing")
-                same_billing_address = form.cleaned_data.get("same_billing_address")
+                use_default_billing = form.cleaned_data.get(
+                    "use_default_billing"
+                )
+                same_billing_address = form.cleaned_data.get(
+                    "same_billing_address"
+                )
 
                 if same_billing_address:
                     billing_address = shipping_address
@@ -152,17 +172,22 @@ class CheckoutView(LoginRequiredMixin, View):
                         order.save()
                     else:
                         messages.info(
-                            self.request, "No default billing address " "available"
+                            self.request,
+                            "No default billing address " "available",
                         )
                         return redirect("core:checkout")
                 else:
                     print("User is entering a new billing address")
                     billing_address1 = form.cleaned_data.get("billing_address")
-                    billing_address2 = form.cleaned_data.get("billing_address2")
+                    billing_address2 = form.cleaned_data.get(
+                        "billing_address2"
+                    )
                     billing_country = form.cleaned_data.get("billing_country")
                     billing_zip = form.cleaned_data.get("billing_zip")
 
-                    if is_valid_form([billing_address1, billing_country, billing_zip]):
+                    if is_valid_form(
+                        [billing_address1, billing_country, billing_zip]
+                    ):
                         billing_address = Address(
                             user=self.request.user,
                             street_address=billing_address1,
@@ -186,7 +211,8 @@ class CheckoutView(LoginRequiredMixin, View):
                     else:
                         messages.info(
                             self.request,
-                            "Please fill in the required " "billing address fields",
+                            "Please fill in the required "
+                            "billing address fields",
                         )
 
                 payment_option = form.cleaned_data.get("payment_option")
@@ -196,7 +222,9 @@ class CheckoutView(LoginRequiredMixin, View):
                 elif payment_option == "P":
                     return redirect("core:payment", payment_option="paypal")
                 else:
-                    messages.warning(self.request, "Invalid payment option selected")
+                    messages.warning(
+                        self.request, "Invalid payment option selected"
+                    )
                     return redirect("core:checkout")
         except ObjectDoesNotExist:
             messages.warning(self.request, "You do not have an active order")
@@ -224,7 +252,9 @@ class PaymentView(View):
                     context.update({"card": card_list[0]})
             return render(self.request, "payment.html", context)
         else:
-            messages.warning(self.request, "You have not added a billing address")
+            messages.warning(
+                self.request, "You have not added a billing address"
+            )
             return redirect("core:checkout")
 
     def post(self, *args, **kwargs):
@@ -238,14 +268,19 @@ class PaymentView(View):
 
             if save:
                 if (
-                    userprofile.stripe_customer_id != ""
-                    and userprofile.stripe_customer_id is not None
+                    userprofile.stripe_customer_id is not None
+                    and userprofile.stripe_customer_id != ""
+
                 ):
-                    customer = stripe.Customer.retrieve(userprofile.stripe_customer_id)
+                    customer = stripe.Customer.retrieve(
+                        userprofile.stripe_customer_id
+                    )
                     customer.sources.create(source=token)
 
                 else:
-                    customer = stripe.Customer.create(email=self.request.user.email,)
+                    customer = stripe.Customer.create(
+                        email=self.request.user.email,
+                    )
                     customer.sources.create(source=token)
                     userprofile.stripe_customer_id = customer["id"]
                     userprofile.one_click_purchasing = True
@@ -325,14 +360,16 @@ class PaymentView(View):
                 # yourself an email
                 messages.warning(
                     self.request,
-                    "Something went wrong. You were not charged." " Please try again.",
+                    "Something went wrong. You were not charged."
+                    " Please try again.",
                 )
                 return redirect("/")
 
             except Exception:
                 # send an email to ourselves
                 messages.warning(
-                    self.request, "A serious error occurred. " "We have been notifed."
+                    self.request,
+                    "A serious error occurred. " "We have been notifed.",
                 )
                 return redirect("/")
 
@@ -384,7 +421,9 @@ def add_to_cart(request, slug):
             return redirect("core:order-summary")
     else:
         ordered_date = timezone.now()
-        order = Order.objects.create(user=request.user, ordered_date=ordered_date)
+        order = Order.objects.create(
+            user=request.user, ordered_date=ordered_date
+        )
         order.items.add(order_item)
         messages.info(request, "This item was added to your cart.")
         return redirect("core:order-summary")
@@ -454,7 +493,9 @@ class AddCouponView(View):
         if form.is_valid():
             try:
                 code = form.cleaned_data.get("code")
-                order = Order.objects.get(user=self.request.user, ordered=False)
+                order = Order.objects.get(
+                    user=self.request.user, ordered=False
+                )
                 order.coupon = get_coupon(self.request, code)
                 order.save()
                 messages.success(self.request, "Successfully added coupon")
