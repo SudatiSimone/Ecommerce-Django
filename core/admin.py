@@ -12,7 +12,7 @@ from .models import (
 )
 
 
-def make_refund_accepted(modeladmin, request, queryset):
+def make_refund_accepted(queryset):
     queryset.update(refund_requested=False, refund_granted=True)
 
 
