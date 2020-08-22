@@ -32,8 +32,8 @@ jobs:
     - name: Black code formatting
       run: |
         python -m black core
-        python -m black --line-length 79 core
         python -m black core --check
+        python -m black --line-length 79 core
 
     - name: Bandit 
       run: python -m bandit core -r
