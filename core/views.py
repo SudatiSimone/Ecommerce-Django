@@ -252,7 +252,7 @@ class PaymentView(View):
                     userprofile.save()
 
             amount = int(order.get_total() * 100)
-            assert amount >= 0.0, "il prezzo da pagare non può "
+            assert amount >= 0.0, "il prezzo da pagare non può " #nosec
             "essere negativo!"
             try:
 
@@ -369,7 +369,7 @@ def add_to_cart(request, slug):
         item=item, user=request.user, ordered=False
     )
     order_qs = Order.objects.filter(user=request.user, ordered=False)
-    if order_qs.exists():
+    if order_qs.exists(): #nosec
         assert isinstance(order_qs[0], Order)
         order = order_qs[0]
         # check if the order item is in the order
