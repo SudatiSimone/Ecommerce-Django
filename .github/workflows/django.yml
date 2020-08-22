@@ -30,7 +30,7 @@ jobs:
         python manage.py test -v 2
     
     - name: Black code formatting
-      run: black core
+      run: python -m black core --check
 
     - name: Bandit 
-      run: bandit core -r
+      run: python -m bandit core -r
