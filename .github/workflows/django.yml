@@ -30,9 +30,10 @@ jobs:
         python manage.py test -v 2
     
     - name: Black code formatting
-      run: python -m black core
-           python -m black --line-length 79 core
-           python -m black core --check
+      run: |
+        python -m black core
+        python -m black --line-length 79 core
+        python -m black core --check
 
     - name: Bandit 
       run: python -m bandit core -r
