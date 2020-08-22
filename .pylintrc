@@ -1,6 +1,6 @@
 [MASTER]
 ignore=templates,static
 load-plugins=pylint_django
-disable=C0114,C0115,C0116,C0103
+disable=C0114,C0115,C0116,C0103,E1101,C0330
 [MESSAGES CONTROL]
 enable=useless-suppression
