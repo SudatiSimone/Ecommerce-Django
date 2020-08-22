@@ -36,6 +36,7 @@ pycodestyle==2.5.0
 pydot==1.4.1
 PyInstaller==3.6
 pylint==2.5.3
+pylint-django==2.3.0
 pyparsing==2.4.7
 python-decouple==3.1
 python3-openid==3.1.0
