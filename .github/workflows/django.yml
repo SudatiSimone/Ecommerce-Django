@@ -45,5 +45,9 @@ jobs:
     
     - name: mypy lint
       run: python -m mypy --config setup.cfg core
+  
+    - name: pylint
+      run: python -mpylint --rcfile=.pylintrc ./core
+      
 
 
