@@ -270,7 +270,6 @@ class PaymentView(View):
                 if (
                     userprofile.stripe_customer_id is not None
                     and userprofile.stripe_customer_id != ""
-
                 ):
                     customer = stripe.Customer.retrieve(
                         userprofile.stripe_customer_id
