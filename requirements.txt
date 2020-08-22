@@ -24,6 +24,7 @@ idna==2.8
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 MutPy==0.6.1
+mypy==0.782
 numpy==1.18.4
 oauthlib==3.0.1
 parameterized==0.7.4
@@ -34,6 +35,7 @@ pip==20.1.1
 pycodestyle==2.5.0
 pydot==1.4.1
 PyInstaller==3.6
+pylint==2.5.3
 pyparsing==2.4.7
 python-decouple==3.1
 python3-openid==3.1.0
