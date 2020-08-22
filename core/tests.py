@@ -1,14 +1,16 @@
 from unittest import mock
 from django.test import TestCase
 from django.urls import reverse
-from core.models import Item, Order, Coupon
-from core.forms import PaymentForm, RefundForm
 from django.core.files import File
 from parameterized import parameterized_class
+from core.models import Item, Order, Coupon
+from core.forms import PaymentForm, RefundForm
 
-"""
-Models tests
-"""
+
+
+
+# Models tests
+
 
 
 class ItemModelTest(TestCase):
@@ -51,9 +53,9 @@ class ItemModelTest(TestCase):
         self.assertEqual(w.__unicode__(), fields)
 
 
-"""
-Forms tests
-"""
+
+# Forms tests
+
 
 
 class PaymentFormTest(TestCase):
@@ -76,9 +78,8 @@ class RefundFormTest(TestCase):
         self.assertTrue(form.is_valid())
 
 
-"""
-Views tests
-"""
+
+# Views tests
 
 
 class ViewTest(TestCase):
@@ -98,16 +99,10 @@ class ViewTest(TestCase):
         self.assertEqual(resp.status_code, 302)  # Redirect
 
 
-"""
-    def test_Product(self):
-        url = reverse('core:product')
-        resp = self.client.get(url)
-        self.assertEqual(resp.status_code, 302)  # Redirect
-"""
 
-"""
-Parametrized tests
-"""
+
+# Parametrized tests
+
 
 
 @parameterized_class(
@@ -129,15 +124,12 @@ class RefundFormTestParametrized(TestCase):
         self.assertEqual(form.is_valid(), self.expected_result)
 
 
-""""Test con elementi come Mock"""
+# Test con elementi come Mock
 
 
 class AddCouponViewMock(TestCase):
     @mock.patch("core.views.get_coupon")
     def AddCouponMock(self, mock_get_coupon):
-        # code = "321"
-        # amount = 20
-
         order = Order.objects.create(user=self.request.user, ordered=False)
         order.coupon = mock_get_coupon
         order.save()
