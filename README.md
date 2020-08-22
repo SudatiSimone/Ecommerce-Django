@@ -1,2 +1,2 @@
 # TVSWProject
-Testing e verifica sofwtare progetto 
+Testing e verifica sofwtare progetto.
