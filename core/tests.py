@@ -254,6 +254,3 @@ class ItemModelMockFile(TestCase):
 
         self.assertEqual(w.__unicode__(), fields)
 
-
-if __name__ == '__main__':
-    main()
