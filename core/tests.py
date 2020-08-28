@@ -120,18 +120,6 @@ class TestViews(TestCase):
         view.kwargs = kwargs
         return view
 
-    def setUp(self):
-        self.client = Client()
-        self.user = User.objects.create_user(
-            username='jacob', email='soos@i.com', password='vvggtt')
-
-    def test_miao1(self):
-        # Create an instance of a POST request.
-        self.client.login(username="jacob", password="vvggtt")
-        data = {'name': 'test name'}
-        res = self.client.post('/checkout/', data)
-        self.assertEqual(res.status_code, 302)
-        # CheckoutView.post(self)
 
     # CheckoutView.get(self)
 
