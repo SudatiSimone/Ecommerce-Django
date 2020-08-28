@@ -99,7 +99,7 @@ class RefundFormTest(TestCase):
 
 
 class CouponFormTest(TestCase):
-    def test_valid_form(self):
+    def test_valid_forms(self):
         data = {
             "code": "1234"
         }
