@@ -5,7 +5,7 @@ from django.contrib.auth.models import AnonymousUser
 from django.urls import reverse
 from django.core.files import File
 from parameterized import parameterized_class
-from core.models import Item,  Coupon,   OrderItem
+from core.models import Item,  Coupon
 from core.forms import PaymentForm, RefundForm, CouponForm
 from core.views import OrderSummaryView
 
@@ -256,4 +256,4 @@ class ItemModelMockFile(TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
