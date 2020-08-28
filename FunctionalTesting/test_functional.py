@@ -10,7 +10,7 @@ from django.utils.text import slugify
 from django.urls import reverse
 import unittest
 from time import sleep
-
+"""
 class LoginViewSeleniumTest(LiveServerTestCase):
 
     def test_selenium_login(self):
@@ -48,3 +48,4 @@ class LoginViewSeleniumTest(LiveServerTestCase):
         #chiusura driver
         sleep(5)
         self.driver.quit()
+"""
