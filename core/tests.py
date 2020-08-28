@@ -5,11 +5,9 @@ from django.contrib.auth.models import AnonymousUser
 from django.urls import reverse
 from django.core.files import File
 from parameterized import parameterized_class
-from core.models import Item, Order, Coupon, UserProfile, Refund, OrderItem
+from core.models import Item,  Coupon,   OrderItem
 from core.forms import PaymentForm, RefundForm, CouponForm
-from core.views import OrderSummaryView, ItemDetailView, CheckoutView
-from django.contrib.auth.models import User
-from django.utils.text import slugify
+from core.views import OrderSummaryView
 
 
 # Models tests

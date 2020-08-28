@@ -1,7 +1,6 @@
 from django.urls import path
 from django.conf import settings
 from django.conf.urls import include
-from django.conf.urls import url
 
 from .views import (
     ItemDetailView,
