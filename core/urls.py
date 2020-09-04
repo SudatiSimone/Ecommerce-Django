@@ -2,6 +2,7 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls import include
 
+
 from .views import (
     ItemDetailView,
     CheckoutView,
@@ -44,3 +45,4 @@ if settings.DEBUG:
     urlpatterns += [
         path('__debug__/', include(debug_toolbar.urls)),
     ]
+

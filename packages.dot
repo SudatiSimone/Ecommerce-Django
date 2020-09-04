@@ -7,17 +7,15 @@ rankdir=BT
 "3" [label="core.forms", shape="box"];
 "4" [label="core.migrations", shape="box"];
 "5" [label="core.migrations.0001_initial", shape="box"];
-"6" [label="core.migrations.0002_auto_20190616_2144", shape="box"];
-"7" [label="core.migrations.0003_userprofile", shape="box"];
-"8" [label="core.migrations.0004_auto_20190630_1408", shape="box"];
-"9" [label="core.models", shape="box"];
-"10" [label="core.tests", shape="box"];
-"11" [label="core.urls", shape="box"];
-"12" [label="core.views", shape="box"];
-"1" -> "9" [arrowhead="open", arrowtail="none"];
-"10" -> "3" [arrowhead="open", arrowtail="none"];
-"10" -> "9" [arrowhead="open", arrowtail="none"];
-"11" -> "12" [arrowhead="open", arrowtail="none"];
-"12" -> "3" [arrowhead="open", arrowtail="none"];
-"12" -> "9" [arrowhead="open", arrowtail="none"];
+"6" [label="core.models", shape="box"];
+"7" [label="core.tests", shape="box"];
+"8" [label="core.urls", shape="box"];
+"9" [label="core.views", shape="box"];
+"1" -> "6" [arrowhead="open", arrowtail="none"];
+"7" -> "3" [arrowhead="open", arrowtail="none"];
+"7" -> "6" [arrowhead="open", arrowtail="none"];
+"7" -> "9" [arrowhead="open", arrowtail="none"];
+"8" -> "9" [arrowhead="open", arrowtail="none"];
+"9" -> "3" [arrowhead="open", arrowtail="none"];
+"9" -> "6" [arrowhead="open", arrowtail="none"];
 }
