@@ -53,7 +53,6 @@ class Item(models.Model):
             self.image,
         )
 
-
     def get_absolute_url(self):
         return reverse("core:product", kwargs={"slug": self.slug})
 
@@ -83,7 +82,7 @@ class OrderItem(models.Model):
 
     def get_amount_saved(self):
         return (
-                self.get_total_item_price() - self.get_total_discount_item_price()
+            self.get_total_item_price() - self.get_total_discount_item_price()
         )
 
     def get_final_price(self):
@@ -203,11 +202,7 @@ class Refund(models.Model):
         return "{self.pk}"
 
     def __unicode__(self):
-        return (
-            self.reason,
-            self.accepted,
-            self.email
-        )
+        return (self.reason, self.accepted, self.email)
 
 
 def userprofile_receiver(sender, instance, created, *args, **kwargs):
