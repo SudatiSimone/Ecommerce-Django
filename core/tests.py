@@ -113,7 +113,7 @@ class TestViews(TestCase):
         # v = setup_view(OrderSummaryView, request)
         # v.method_name()
 
-    def test_AddCoupon(self):
+    #def test_AddCoupon(self):
         # url = reverse("core:add-coupon")
         # resp = self.client.get(url)
         # self.assertEqual(resp.status_code, 405)  # Method not allowed
