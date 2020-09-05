@@ -12,13 +12,13 @@ La cartella "TVSWProject" contiene l'intera applicazione scritta in django.
 
 Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
-1. Asmeta: due modelli asmeta. Il primo per 
+1. **Asmeta**: due modelli asmeta. Il primo per 
 
-2. Yakindu: tool per MBT
+2. **Yakindu**: tool per MBT
 
-3. MCDC: excel file in cui viene analizzato il Modified condition/decision coverage di un form dell'applicazione
+3. **MCDC**: excel file in cui viene analizzato il Modified condition/decision coverage di un form dell'applicazione
 
-4. Ctwedge: Combinatorial Testing Web-based Editor and Generator per combinatorial testing
+4. **Ctwedge**: Combinatorial Testing Web-based Editor and Generator per combinatorial testing
 
 
 ## Applicazione
