@@ -11,4 +11,4 @@ All'interno della cartella "ProgettoTVSW" vi sono:
 
 4) Ctwedge
 
-https://img.shields.io/appveyor/tests/SudatiSimone/TVSWProject
+![AppVeyor tests](https://img.shields.io/appveyor/tests/SudatiSimone/TVSWProject)
