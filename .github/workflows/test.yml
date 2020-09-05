@@ -25,29 +25,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        
     - name: Run Tests
       run: |
         python manage.py test -v 2
     
-    - name: Black code formatting
-      run: |
-        python -m black core --exclude forms.py        
-        
-    - name: Black line length
-      run: |
-        python -m black core --line-length 79 core
 
-    - name: Bandit 
-      run: python -m bandit core -r
-     
-    - name: Flake8
-      run: flake8 core --ignore F841,W503,E231
-    
-    - name: mypy lint
-      run: python -m mypy --config setup.cfg core
-  
-    - name: pylint
-      run: python -mpylint --rcfile=.pylintrc ./core --disable=W
       
 
 
