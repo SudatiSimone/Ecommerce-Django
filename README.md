@@ -4,7 +4,7 @@
 
 Applicazione web scritta in django di un sito ecommerce e completa fase di testing e verifica del codice. 
 
-Vedi documentazione nel file "Documentazione.pdf". 
+Vedi documentazione nel file "**Documentazione.pdf**". 
 
 ## Struttura 
 
