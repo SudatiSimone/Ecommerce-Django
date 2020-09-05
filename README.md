@@ -17,7 +17,7 @@ La cartella "TVSWProject" contiene l'intera applicazione scritta in django.
 
 Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
-1. **Asmeta**: due modelli asmeta. Il primo per 
+1. **Asmeta**: due modelli asmeta. Il primo più complesso per simularlo con avalla e estrarne degli scenari di validazione, il secondo meno complesso per per fare model checking in asmetaSMV e usare il model advisor
 
 2. **Yakindu**: tool per MBT
 
