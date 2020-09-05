@@ -23,7 +23,7 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 ## Applicazione
 
-<img src="Capture.jpg"
+<img src="Capture.JPG"
      style="float: left; margin-right: 10px;" />
      
 ## Diritti di autore
