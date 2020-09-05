@@ -31,9 +31,9 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 Installazione dei package
 
 Run applicazione
-'''python
+~~~python
 python manage.py runserver
-'''
+~~~
 Run dei test (compreso il test selenium)
      
 ## Diritti di autore
