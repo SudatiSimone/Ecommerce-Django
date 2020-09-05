@@ -8,7 +8,9 @@ Vedi documentazione nel file "Documentazione.pdf".
 
 ## Struttura 
 
-La cartella "TVSWProject" contiene l'intera applicazione scritta in django. Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
+La cartella "TVSWProject" contiene l'intera applicazione scritta in django. 
+
+Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 1. Asmeta: due modelli asmeta. Il primo per 
 
@@ -19,3 +21,4 @@ La cartella "TVSWProject" contiene l'intera applicazione scritta in django. Inol
 4. Ctwedge: Combinatorial Testing Web-based Editor and Generator per combinatorial testing
 
 
+## Applicazione
