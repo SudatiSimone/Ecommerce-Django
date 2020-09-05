@@ -26,6 +26,14 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 <img src="Capture.JPG"
      style="float: left; margin-right: 10px;" />
      
+## Setup e Run applicazione 
+
+Installazione dei package
+
+Run applicazione
+
+Run dei test (compreso il test selenium)
+     
 ## Diritti di autore
 
 Progetto iniziale di Matthew Freire, mattfreire su github. 
