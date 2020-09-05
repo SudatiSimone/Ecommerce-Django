@@ -8,7 +8,7 @@ Vedi documentazione nel file "Documentazione.pdf".
 
 ## Struttura 
 
-All'interno della cartella "ProgettoTVSW" vi sono:
+La cartella "TVSWProject" contiene l'intera applicazione scritta in django. Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 1. Asmeta: due modelli asmeta. Il primo per 
 
