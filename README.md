@@ -11,4 +11,4 @@ All'interno della cartella "ProgettoTVSW" vi sono:
 
 4) Ctwedge
 
-![AppVeyor tests](https://img.shields.io/appveyor/tests/SudatiSimone/TVSWProject)
+![Test](https://github.com/SudatiSimone/SpaceInvader/workflows/Test/badge.svg?branch=master&event=push)
