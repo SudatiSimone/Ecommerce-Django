@@ -1,11 +1,12 @@
 # TVSWProject
-```json
+~~~json
 {
   "schemaVersion": 1,
   "label": "hello",
   "message": "sweet world",
   "color": "orange"
-}``` 
+}
+~~~
 
 ![test](https://github.com/SudatiSimone/TVSWProject/workflows/test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/build/badge.svg)
 
