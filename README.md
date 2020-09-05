@@ -1,6 +1,6 @@
 # TVSWProject
 
-![Test](https://github.com/SudatiSimone/TVSWProject/workflows/Test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)
+![Test](https://github.com/SudatiSimone/TVSWProject/workflows/Test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)
 
 
 
