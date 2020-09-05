@@ -22,3 +22,6 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 
 ## Applicazione
+
+<img src="Capture.jpg"
+     style="float: left; margin-right: 10px;" />
