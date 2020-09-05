@@ -20,12 +20,6 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 4. **Ctwedge**: Combinatorial Testing Web-based Editor and Generator per combinatorial testing
 
-
-## Applicazione
-
-<img src="Capture.JPG"
-     style="float: left; margin-right: 10px;" />
-     
 ## Setup e Run applicazione 
 
 Installazione dei package
@@ -44,6 +38,13 @@ Run dei test (compreso il test selenium)
 ~~~python
 python manage.py test -v2
 ~~~
+
+
+## Applicazione
+
+<img src="Capture.JPG"
+     style="float: left; margin-right: 10px;" />
+     
      
 ## Diritti di autore
 
