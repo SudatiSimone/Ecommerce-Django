@@ -11,4 +11,4 @@ All'interno della cartella "ProgettoTVSW" vi sono:
 
 4) Ctwedge
 
-![Test](https://github.com/SudatiSimone/TVSWProject/workflows/Django/badge.svg)
+![Test](https://github.com/SudatiSimone/TVSWProject/workflows/Test/badge.svg)
