@@ -46,10 +46,10 @@ python manage.py test -v2
 <img src="Capture.JPG"
      style="float: left; margin-right: 10px;" />
      
-<img src="Capture2.JPG"
+<img src="Capture1.JPG"
      style="float: left; margin-right: 10px;" />
      
-<img src="Capture3.JPG"
+<img src="Capture2.JPG"
      style="float: left; margin-right: 10px;" />
      
 
