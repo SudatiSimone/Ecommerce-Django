@@ -1,0 +1,28 @@
+Model combinatorialTesting
+
+Parameters:
+	
+  reason : {VUOTA, TEXT, LONG_TEXT}
+  accepted : Boolean
+  nomeUtente: [0..12]
+  mailSuffisso : {COM, IT, ERROR}
+  mailDominio : [0..12]
+  mailChiocciola : Boolean
+  reasonValid: Boolean
+  emailValid: Boolean
+  noError: Boolean
+
+Constraints:
+  # noError => (reasonValid and emailValid )#
+  # accepted = true #
+  # not(reasonValid) <=> reason=VUOTA #
+  # emailValid => ( (nomeUtente>0  and nomeUtente<10) and 
+  					(mailChiocciola==true) and 
+  					(mailSuffisso=IT or mailSuffisso=COM) and 
+  					(mailDominio>0 and mailDominio<10) ) #
+  
+  
+  
+  
+  
+  
