@@ -43,11 +43,17 @@ python manage.py test -v2
 
 ## Applicazione
 
+Homepage
+
 <img src="Capture.JPG"
      style="float: left; margin-right: 10px;" />
+
+Carrello
      
 <img src="Capture1.JPG"
      style="float: left; margin-right: 10px;" />
+     
+Procedura di pagamento
      
 <img src="Capture2.JPG"
      style="float: left; margin-right: 10px;" />
