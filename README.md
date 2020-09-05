@@ -25,3 +25,7 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 <img src="Capture.jpg"
      style="float: left; margin-right: 10px;" />
+     
+## Diritti di autore
+
+Progetto iniziale di Matthew Freire, mattfreire su github. 
