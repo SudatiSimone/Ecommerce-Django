@@ -1,8 +1,8 @@
 # TVSWProject
 
-![Test](https://github.com/SudatiSimone/TVSWProject/workflows/Test/badge.svg)
+![Test](https://github.com/SudatiSimone/TVSWProject/workflows/Test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)
 
-![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)
+
 
 
 Applicazione web scritta in django di un sito ecommerce e completa fase di testing e verifica del codice. 
