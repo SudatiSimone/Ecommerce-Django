@@ -1,0 +1,11 @@
+GeneratorModel for yakindu::java {
+
+	statechart ModelloEcommerce {
+
+		feature Outlet {
+			targetProject = "yakinduProject"
+			targetFolder = "src-gen"
+			libraryTargetFolder = "src"
+		}
+	}
+}

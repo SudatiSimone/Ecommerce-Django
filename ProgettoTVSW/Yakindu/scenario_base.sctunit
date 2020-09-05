@@ -1,0 +1,39 @@
+testclass scenario_base for statechart ModelloEcommerce {
+	
+	@Test
+	operation scenario1() {
+		enter
+			assert active (main_region.START )
+			raise switchOn
+			assert (numProducts ==0)
+			assert (money == 16)
+			assert active (main_region.ENTER )
+			raise go
+			assert active (main_region.CHOOSE_SERVICE )
+			raise add
+			assert active (main_region.ADD_PRODUCT )
+			raise decision
+			assert active (main_region.CHOOSE_SERVICE)
+			assert (numProducts ==1)
+			assert (money == 11)
+			raise add
+			assert active (main_region.ADD_PRODUCT )
+			raise decision
+			assert active (main_region.CHOOSE_SERVICE )
+			assert (numProducts ==2)
+			assert (money == 6)
+			raise recharge
+			assert active (main_region.CHOOSE_SERVICE )
+			assert (money == 16)
+			raise add
+			assert active (main_region.ADD_PRODUCT )
+			raise decision
+			assert active (main_region.CHOOSE_SERVICE )
+			assert (numProducts ==3)
+			assert (money == 11)
+			raise exit2
+			assert active (main_region.OUT )
+			raise out1
+		exit
+	}
+}

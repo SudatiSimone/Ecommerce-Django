@@ -1,0 +1,4 @@
+<testsuite name="scenario_base" time="">
+  <testcase name="scenario1" classname="platform:/resource/yakinduProject/scenario_base.sctunit#scenario_base.scenario1" time="">
+  </testcase>
+</testsuite>

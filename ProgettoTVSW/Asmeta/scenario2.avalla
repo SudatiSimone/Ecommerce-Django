@@ -1,0 +1,79 @@
+scenario SCENARIO_AGGIUNTA_PRODOTTI
+load ModelloAsmeta.asm
+check currentState = START;
+step
+check currentState = INSERIREID;
+set id_utente := utente2;
+step
+check currentState = CHECKID;
+check currentUserID = utente2;
+set id_utente := utente2;
+step
+check currentState = INSERIREPWD;
+check currentUserID = utente2;
+set id_utente := utente2;
+set password := "miao2";
+step
+check currentState = CHECKPWD;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+set id_utente := utente2;
+set password := "miao2";
+step
+check currentState = CHOOSESERVICE;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := ADD_PRODUCT_OR_EXIT;
+step
+check currentState = ADD_PRODUCT;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check total = 0;
+check numProducts = 0;
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := ADD_PRODUCT_OR_EXIT;
+set insertPrice := 2;
+set insertQuantity := 1;
+step
+check currentState = CHOOSESERVICE;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check total = 2;
+check numProducts = 1;
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := ADD_PRODUCT_OR_EXIT;
+set insertPrice := 2;
+set insertQuantity := 1;
+step
+check currentState = ADD_PRODUCT;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check total = 2;
+check numProducts = 1;
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := ADD_PRODUCT_OR_EXIT;
+set insertPrice := 3;
+set insertQuantity := 1;
+step
+check currentState = CHOOSESERVICE;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check total = 5;
+check numProducts = 2;
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := EXIT;
+set insertPrice := 3;
+set insertQuantity := 1;
+step
+check currentState = START;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check total = 5;
+check numProducts = 2;
+step

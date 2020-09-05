@@ -1,0 +1,76 @@
+scenario SCENARIO_SCELTA_PRODOTTI
+load ModelloAsmeta.asm
+check currentState = START;
+step
+check currentState = INSERIREID;
+set id_utente := utente2;
+step
+check currentState = CHECKID;
+check currentUserID = utente2;
+set id_utente := utente2;
+step
+check currentState = INSERIREPWD;
+check currentUserID = utente2;
+set id_utente := utente2;
+set password := "miao2";
+step
+check currentState = CHECKPWD;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+set id_utente := utente2;
+set password := "miao2";
+step
+check currentState = CHOOSESERVICE;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := CART;
+set prod := "maglia";
+step
+check currentState = CARRELLO;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check prodotto = "maglia";
+check listaProdotti(utente2) = [];
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := CART;
+set prod := "maglia";
+step
+check currentState = CHOOSESERVICE;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check prodotto = "maglia";
+check listaProdotti(utente2) = [maglia];
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := CART;
+set prod := "sciarpa";
+step
+check currentState = CARRELLO;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check prodotto = "sciarpa";
+check listaProdotti(utente2) = [maglia];
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := CART;
+set prod := "sciarpa";
+step
+check currentState = CHOOSESERVICE;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check prodotto = "sciarpa";
+check listaProdotti(utente2) = [maglia,sciarpa];
+set id_utente := utente2;
+set password := "miao2";
+set selectedService := EXIT;
+set prod := "sciarpa";
+step
+check currentState = START;
+check currentUserID = utente2;
+check currentPwd = "miao2";
+check prodotto = "sciarpa";
+check listaProdotti(utente2) = [maglia,sciarpa];
+step
