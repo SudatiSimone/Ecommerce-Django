@@ -1,5 +1,4 @@
-name: Test 
-
+name: lint
 on:
   push:
     branches: [ master ]
