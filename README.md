@@ -46,7 +46,13 @@ python manage.py test -v2
 <img src="Capture.JPG"
      style="float: left; margin-right: 10px;" />
      
+<img src="Capture2.JPG"
+     style="float: left; margin-right: 10px;" />
      
+<img src="Capture3.JPG"
+     style="float: left; margin-right: 10px;" />
+     
+
 ## Diritti di autore
 
 Progetto iniziale di Matthew Freire, mattfreire su github. 
