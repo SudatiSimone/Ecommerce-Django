@@ -21,7 +21,7 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 2. **Yakindu**: MBT
 
-3. **MCDC**: excel file in cui viene analizzato il Modified condition/decision coverage di un form dell'applicazione
+3. **MCDC**: file excel in cui viene analizzato il Modified condition/decision coverage di un form dell'applicazione
 
 4. **Ctwedge**: Combinatorial Testing Web-based Editor and Generator per combinatorial testing
 
