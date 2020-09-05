@@ -25,6 +25,8 @@ Inoltre all'interno della cartella "ProgettoTVSW" vi sono:
 
 4. **Ctwedge**: Combinatorial Testing Web-based Editor and Generator per combinatorial testing
 
+5. **Desing by contract**: file python creato ad hoc per utilizzare le funzionalità del DBC. 
+
 ## Setup e Run applicazione 
 
 Installazione dei package
