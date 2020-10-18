@@ -1,5 +1,5 @@
 # Ecommerce Django
-
+[![GitHub contributors](https://img.shields.io/github/contributors/SudatiSimone/Ecommerce-Django.svg)](https://GitHub.com/SudatiSimone/Ecommerce-Django/graphs/contributors/) 
 ![test](https://github.com/SudatiSimone/TVSWProject/workflows/test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/build/badge.svg)
 
 
