@@ -1,5 +1,5 @@
 # Ecommerce Django
-[![License: GPL](https://img.shields.io/badge/License-GPL3.0-blue.svg)](https://sudati-simone.mit-license.org/SimoneSudati/License_MIT.com)
+[![License: GPL](https://img.shields.io/badge/License-GPL3.0-blue.svg)](https://github.com/SudatiSimone/Ecommerce-Django/blob/master/LICENSE)
 ![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-blue.svg) [![GitHub contributors](https://img.shields.io/github/contributors/SudatiSimone/Ecommerce-Django.svg)](https://GitHub.com/SudatiSimone/Ecommerce-Django/graphs/contributors/)  ![test](https://github.com/SudatiSimone/TVSWProject/workflows/test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/build/badge.svg)
 
 
