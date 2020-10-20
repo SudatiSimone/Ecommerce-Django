@@ -1,7 +1,6 @@
 # Ecommerce Django
-[![GitHub contributors](https://img.shields.io/github/contributors/SudatiSimone/Ecommerce-Django.svg)](https://GitHub.com/SudatiSimone/Ecommerce-Django/graphs/contributors/) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://sudati-simone.mit-license.org/SimoneSudati/License_MIT.com)
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-blue.svg) ![test](https://github.com/SudatiSimone/TVSWProject/workflows/test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/build/badge.svg)
+![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-blue.svg) [![GitHub contributors](https://img.shields.io/github/contributors/SudatiSimone/Ecommerce-Django.svg)](https://GitHub.com/SudatiSimone/Ecommerce-Django/graphs/contributors/)  ![test](https://github.com/SudatiSimone/TVSWProject/workflows/test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/build/badge.svg)
 
 
 
