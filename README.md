@@ -3,13 +3,15 @@
 ![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-blue.svg) [![GitHub contributors](https://img.shields.io/github/contributors/SudatiSimone/Ecommerce-Django.svg)](https://GitHub.com/SudatiSimone/Ecommerce-Django/graphs/contributors/)  ![test](https://github.com/SudatiSimone/TVSWProject/workflows/test/badge.svg)  ![Lint](https://github.com/SudatiSimone/TVSWProject/workflows/lint/badge.svg)  ![Build](https://github.com/SudatiSimone/TVSWProject/workflows/build/badge.svg)
 
 
-
-
-
 Applicazione web scritta in django di un sito ecommerce e completa fase di testing e verifica del codice. 
-CI con github actions.
-
+CI con github actions. 
 Vedi documentazione nel file "**Documentazione.pdf**". 
+
+
+## Diritti di autore
+
+Progetto iniziale di partenza di Matthew Freire, mattfreire su github. 
+
 
 ## Struttura 
 
@@ -65,6 +67,4 @@ python manage.py test -v2
      style="float: left; margin-right: 10px;" />
      
 
-## Diritti di autore
 
-Progetto iniziale di Matthew Freire, mattfreire su github. 
