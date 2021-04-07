@@ -5,7 +5,7 @@
 
 Applicazione web scritta in django di un sito ecommerce e completa fase di testing e verifica del codice. 
 CI con github actions. 
-Vedi documentazione nel file "**Documentazione.pdf**". 
+Vedi documentazione nel file [Documentazione.pdf](https://github.com/SudatiSimone/Ecommerce-Django/blob/master/Documentazione.pdf) . 
 
 
 ## Diritti di autore
