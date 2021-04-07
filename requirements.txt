@@ -21,7 +21,7 @@ djangorestframework>=3.9.1
 flake8==3.8.3
 future==0.18.2
 idna==2.8
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 MutPy==0.6.1
 mypy==0.782
